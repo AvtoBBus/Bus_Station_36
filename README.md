@@ -1,11 +1,10 @@
-# mapbox-sprites-from-png
+# Немного исправленная версия вот этого [mapbox-sprites-from-png](https://github.com/geomatico/mapbox-sprites-from-png)
 
-Generates mapbox-gl sprites from a collection of png images.
+Генерирует из нескольких png-картинок единую картинку со спрайтами, а также поддерживает небольшие настройки
 
-You should ideally generate sprites from svg images using spritezero-cli.
-But sometimes you just have the png version.
+Использование:
 
-Usage:
-
-1. Place your images in the `img` directory.
-2. Run `npm start`.
+0. `npm ci`
+1. Положить PNG-файлы в директорию `img`.
+2. При необходимости поменять параметры в `.env`.
+3. Запустить `npm start`.

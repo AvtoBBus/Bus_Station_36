@@ -1,9 +1,10 @@
 const fs = require('fs');
 const glob = require('glob');
 var jimp = require('jimp');
+var dotenv = require('dotenv');
 
-const FILE_NAME = 'sif-sprites'; // Имя выходного файла
-const RESIZE_KOEF = 2; // Если нужно уменьшить картинки, то поставить <1 по умолчанию для @2x используется 2
+const FILE_NAME = process.env.FILE_NAME ?? 'sprites'; // Имя выходного файла
+const RESIZE_KOEF = process.env.RESIZE_KOEF ?? 2; // Если нужно уменьшить картинки, то поставить <1 по умолчанию для @2x используется 2
 
 // Load in dependencies
 var Spritesmith = require('spritesmith');

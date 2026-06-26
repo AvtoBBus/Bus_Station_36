@@ -8,8 +8,8 @@
   },
   "author": "Oscar Fonts <oscar.fonts@geomatico.es>",
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
+    "dotenv": "^17.4.2",
     "glob": "^7.1.6",
     "jimp": "^0.16.1",
     "spritesmith": "^3.4.0"
